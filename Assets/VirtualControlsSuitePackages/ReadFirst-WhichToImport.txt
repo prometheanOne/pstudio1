@@ -1,0 +1,50 @@
+﻿----------------------------------------
+ Virtual Controls Suite for Unity
+ © 2012 Bit By Bit Studios, LLC
+ Use of this software means you accept the Unity provided license agreement.  
+ Please don't redistribute without permission :)
+---------------------------------------------------------------
+
+Thank you for downloading Virtual Controls Suite!  
+
+Enclosed in this directory are packages for various configurations of VCS.  You will only need one.
+
+-----------------
+WHICH ONE SHOULD I IMPORT?
+-----------------------------
+
+If you're upgrading a project from a 1.x version of VCS, no matter what UI solution you're using, import VCS_NGUI.unitypackage.
+  - If you aren't using NGUI in your project, you'll need to either skip importing VCPluginSettings.cs
+	or edit it to disable NGUI (and enable EZGUI if applicable).
+
+If you're starting a new project, it depends on which UI solution you're going to use:
+
+-----------------
+	NGUI
+-----------------------------
+  - If you're going to use NGUI, and you own the full version of NGUI: 
+  	Import NGUI into your project first, and then import VCS_NGUI.unitypackage.
+  
+  	OR
+  
+  - If you're going to use NGUI (or just want to try it), and you DO NOT have a copy of NGUI:
+  	Import VCS_NGUI_With_Trial.unitypackage.
+  		
+-----------------
+	EZGUI
+-----------------------------  		
+  		
+  - If you're going to use EZGUI, you must have the full version of EZGUI in your project first.
+  	Import EZGUI into your project first, and then import VCS_EZGUI.unitypackage.
+  		
+-----------------
+	GUITextures (NO EZGUI, NO NGUI)
+-----------------------------
+  		
+  - If you're going to use Unity's built in GUITextures:
+  	Import VCS_GUITextures.unitypackage.
+  		
+-----------------
+	MORE INFO
+----------------------------- 
+More info and documentation can be found in the readme file inside this directory.  Enjoy!

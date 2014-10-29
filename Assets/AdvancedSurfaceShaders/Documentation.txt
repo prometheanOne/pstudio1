@@ -1,0 +1,69 @@
+Advanced Surface Shaders 2.3 Documentation
+-----
+
+A significant update to this package will be available after the release of Unity 5 with more extensive documentation.
+If you need further information please contact support@southeastgames.com or post to the Unity Forum thread for this package
+-----
+
+Textures
+
+Advanced Surface Shaders uses the same texture channels throughout all its shaders to simplify the art workflow. The following shows what textures can be used in the shaders and how their channels are utilised.
+
+Diffuse Map
+RGB: Main material colour, A: Alpha (Transparency)
+
+Bump Map
+RGBA: Normal map
+
+Specular Map
+RGB: Colour specular, A: Height Map
+
+Gloss Map
+R: Gloss Value G: Specular Value B: None A: Height Map
+Note: This uses the same texture name as the Specular Map ("SpecMap")
+
+Emissive Map
+RGB: Emissive Colour
+
+Relaxed Cone Step Relief Map
+RGBA: Relaxed Cone Step Relief Map
+Note: To generate a relaxed cone step relief map that works best with this shader, use the executable found on the CD contents of the book 'GPU Gems 3'
+
+Lighting Ramp
+RGB: Lighting Ramp
+Description: Colours a pixel by a texture lookup based on how lit the pixel is by light sources. 0% lit (normal facing away from the light source) reads from the left side of the texture through to 100% lit (normal facing the light source) on the right side of the texture. Used for stylistic lighting effects such as toon shading.
+
+Reflection Cubemap
+RGB: Reflection colour
+
+
+Properties
+
+Advanced Surface Shaders used the same properties where relevant through all the shaders so your customised values are maintained as you change shader effects on a material.
+
+"Main Color" - Used to tint the overall colour of your material. The alpha channel is used to define material transparency
+"Specular Color" - Used to tint the colour of specular highlights on the material
+"Shininess" - Defines the size and intensity of specular highlights
+"Reflection Color" - Used to tint the colour of reflection effects on the material
+"Height" - Used to set the intensity of parallax effects (Parallax, Parralax Occlusion, Relief) by defining how far pixels should appear to stand out from the surface
+"Parallax Samples" - Used by the Parallax Occlusion effect to govern the maximum amount of times it will sample the heightmap. More samples = Hgher Quality, but slower
+"Tessellation" - Used by some tessellation effects to determine the extent to subdivide the surface, making it have more or less geometry
+"Tessellation Min Distance" - Used in the Distance based tessellation effect to set at what distance from the surface the highest level of tessellation is used
+"Tessellation Max Distance" - Used in the Distance based tessellation effect to set at what distance from the surface the lowest level of tessellation is used
+"Edge length" - Used in Phong (Smoothing) and the Edge Length based tessellation effect to determine how much to tessellate a surface in relation to the screen space size of the mesh edges
+"Displacement" - Used in tessellation effects to set how far vertices protude out from the surface
+"Phong Strengh" - Used in the Phong (Smoothing) tessellation effect to determine the strength of the rounding effect
+"Rim Color" - Used to tint the colour of Rim Lighting effects
+"Rim Power" - Governs the intensity of the Rim Lighting effects
+"Emissive Strength" - Governs the intensity of emissive effects
+"Texture" - The main diffuse texture to use on the matieral
+"Reflection Cubemap" - The reflection cubemap texture to use in reflection shaders
+"BumpMap" - The normal map texture to use in Bump Map shaders
+"SpecMap (RGB) HeightMap (A)" - Use the Red, Green & Blue channels of the texture to tint the colour of specular highlights on the material. The Alpha channel works as the height map for parralax effects
+"Gloss (R), Shininess (G) HeightMap (A)" - Use the Red channel of the texture to define the glossiness of pixels for specular effects. Use the Greeen channel of the texture to define the shininess of the pixels for specular effects. The Alpha channel works as the height map for parralax effects
+"HeightMap (A)" - The Alpha channel works as the height map for parrallax and tessellation effects
+"RelaxedConeMap" - The texture map to be used for Relaxed Cone Step Relief Mapping effects
+"Relief Clip Tiling U,V" - Used to define how to 'clip' the rendering of this effect. The X,Y,Z,W values indicate a UV area within to draw the effect and it will be clipped outside. Leave this as the default if unsure.
+"EmissiveMap (RGB)" - The texture used to set coloured emissive elements on a material
+"Lighting Ramp (RGB)" - Colours a pixel by a texture lookup based on how lit the pixel is by light sources. 0% lit (normal facing away from the light source) reads from the left side of the texture through to 100% lit (normal facing the light source) on the right side of the texture. Used for stylistic lighting effects such as toon shading
+"Alpha cutoff" - A 0.0 to 1.0 value indicating at what alpha value and up the material should be visible

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: scheuermann_mat
+  m_Shader: {fileID: 4800000, guid: d8825022f7d05964cb2899101e21db59, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: f0538e6635b8c3942819be77142a597f, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecularTex
+        second:
+          m_Texture: {fileID: 2800000, guid: c3a453771406050448927694e8a6842b, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DiffCubeIBL
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecCubeIBL
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .970000029
+      data:
+        first:
+          name: _SpecularMultiplier
+        second: 256
+      data:
+        first:
+          name: _SpecularMultiplier2
+        second: 256
+      data:
+        first:
+          name: _PrimaryShift
+        second: 0
+      data:
+        first:
+          name: _SecondaryShift
+        second: -.200000003
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .816176474, g: .597646475, b: .456098616, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .867647052, g: .787570059, b: .701773345, a: 1}
+      data:
+        first:
+          name: _SpecularColor2
+        second: {r: .742647052, g: .646690428, b: .458693773, a: 1}

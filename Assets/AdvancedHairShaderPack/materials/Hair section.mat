@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Hair section
+  m_Shader: {fileID: 4800000, guid: 680eeb57434e91e4bbf0349bd4e22501, type: 3}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 6b5d40314ec4d456b8f4b01b9035163f, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: .5, y: .5}
+      data:
+        first:
+          name: _SpecularTex
+        second:
+          m_Texture: {fileID: 2800000, guid: d6aa8e3fcc72e4534ae0cda819a6f278, type: 3}
+          m_Scale: {x: .5, y: 1}
+          m_Offset: {x: .5, y: .5}
+    m_Floats:
+      data:
+        first:
+          name: _Cutoff
+        second: .949999988
+      data:
+        first:
+          name: _SpecularMultiplier
+        second: 1.21000004
+      data:
+        first:
+          name: _Gloss
+        second: 128
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .16911763, g: .131640747, b: .0509839877, a: 1}
+      data:
+        first:
+          name: _SpecularColor
+        second: {r: .235294104, g: .15096049, b: .074394457, a: 1}

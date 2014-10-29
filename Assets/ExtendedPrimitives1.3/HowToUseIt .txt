@@ -1,0 +1,11 @@
+	How to use it :
+
+- Once you have extract the package in your Unity Editor, a new tab "FormationFacile" will appear.
+
+- By clicking on it, you will see the "Extended Primitives" tab. Click on it.
+
+- A new windows appear in the editor, place it where you want.
+
+- You can create new primitives by clicking on the small image representing the primitive that will be created on the scene as a gameObject (prefab).
+
+For more unity scripts, extenssions, services or games : www.formation-facile.fr
